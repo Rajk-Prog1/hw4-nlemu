@@ -1,3 +1,13 @@
 def swap_case(s: str) -> int:
-    """Write your code here"""
-    pass
+    lista = []
+    for k in s:
+        if k.isupper():
+            lista.append(k.lower())
+        elif k.islower:
+            lista.append(k.upper())
+        else:
+            lista.append(k)
+    s = "".join(lista)
+    return(s)
+
+
